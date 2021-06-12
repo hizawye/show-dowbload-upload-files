@@ -8,7 +8,8 @@ sdk : dropbox sdk
 import dropbox
 from sys import exit
 
-dbx = dropbox.Dropbox('FIkaJ30Ej30AAAAAAAAAAW03WFP_VydJSL_gSUvACV2jl3fZQd-QIzsxmNRdLa8t')
+TOKEN = 'your token'
+dbx = dropbox.Dropbox(TOKEN)
 
 
 def show_files():
