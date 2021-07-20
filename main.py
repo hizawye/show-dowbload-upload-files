@@ -4,9 +4,12 @@ simple script to control your account through the terminall
 Author : safou abderrahim
 sdk : dropbox sdk
 """
-
-import dropbox
+from os import system
 from sys import exit
+try:
+	import dropbox
+except:
+	system('pip install dropbox')
 
 TOKEN = 'your token'
 dbx = dropbox.Dropbox(TOKEN)
