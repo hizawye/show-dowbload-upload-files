@@ -6,10 +6,13 @@ sdk : dropbox sdk
 """
 from os import system
 from sys import exit
+
+#inspired from razewerz assist
 try:
 	import dropbox
 except:
 	system('pip install dropbox')
+#end inspiration
 
 TOKEN = 'your token'
 dbx = dropbox.Dropbox(TOKEN)
